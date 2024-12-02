@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>K-Reseñas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logotipo">K-Reseñas</h1>
+        <nav>       
+        <ul>
+            <a href="#peliculas">Películas</a>
+            <a href="#series">Series</a>
+            <a href="#premios">Premios</a>
+            <a href="#generos">Generos</a>
+            <a href="#lomasleido">Lo más leído</a>
+            <a href="#formulario-opinion">Newsletter</a>
+            <a href="#formulario-opinion">Escribir mi crítica</a>
+            <a href="#footer">Contacto</a>
+        </ul>
+    </nav>
+        </div>
+    </header>
+    <main> 
+        <section id="hero">
+            <div class="hero-video">
+                <video class="video" width="100%" height="auto" id="hero-video" muted>
+                    <source src="videos/All of Us Are Dead_Official Trailer.mp4" type="video/mp4">
+                </video>
+        
+                <!-- Contenedor de controles -->
+                <div class="controls-container">
+                    <!-- Botón para reproducir/pausar -->
+                    <button class="play-button" id="play-button"><i class="fa-solid fa-play"></i></button>
+                    <button class="pause-button" id="pause-button" style="display: none;"><i class="fa-solid fa-pause"></i></button>
+        
+                    <!-- Botón de volumen -->
+                    <button class="volume-button" id="volume-button"><i class="fa-solid fa-volume-up"></i></button>
+                </div>
+        
+                <!-- Control de volumen -->
+                <div class="volume-slider" id="volume-slider">
+                    <input type="range" id="volume-control" min="0" max="1" step="0.05" value="1">
+                </div>
+        
+                <!-- Contenido del hero -->
+                <div class="overlay"></div>
+                <div class="contenedor">
+                    <h2>All Of Us Are Dead</h2>
+                    <h3>(IMDb 7,5/10)</h3>
+                    <p>Director: Lee Jae-kyoo <br>Reparto: Park Solomon, Park Ji-hoo, Yoon Chan-young, Cho Yi-hyun...<br>Género: Terror, zombies. <br>Año: 2021 <br>País: Corea del Sur</p>
+                    <button role="button" class="boton"><i class="fa-solid fa-envelope-circle-check"></i>Leer Reseñas</button>
+                    <button role="button" class="boton"><i class="fa-solid fa-feather"></i>Reseñar</button>
+                </div>
+            </div>
+        </section>
+
+<!-- carrusel 1 -->
+<section id="peliculas">
+    <div class="contenedor-titulo-controles">
+        <h3>Películas Mejor Calificadas</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/la gloria_optimizada.jpg" alt="la gloria drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/exhuma__optimizada.jpg" alt="exhuma pelicula"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/connection_optimizada.jpg" alt="conection drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Vincenzo_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/AllOfUsAreDead_optimizada.jpg" alt="All Of Us Are Dead drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section>
+
+<!-- carrusel2 -->
+<section id="series">
+    <div class="contenedor-titulo-controles">
+        <h3>Series Mejor Calificadas</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/crash landing on you_optimizada.jpg" alt="la gloria drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/DPElCazadesertores_optimizada.jpg" alt="exhuma pelicula"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/El monstruo de la vieja Seúl_optimizada.jpg" alt="conection drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/El naufragio de una diva_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Está bien no estar bien_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/AllOfUsAreDead_optimizada.jpg" alt="All Of Us Are Dead drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section>
+
+<!-- carrusel3 -->
+<section id="premios">
+            <div class="contenedor-titulo-controles">
+                <h3>Premios Baeksang Arts Awards 2024</h3>
+            </div>
+    <div class="contenedor-principal">
+        <button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="serie">
+                    <a href="#"><img src="img_cmpss/FlorDelMal_optimizada.jpg" alt="la gloria drama"></a>
+                </div>
+                <div class="serie">
+                    <a href="#"><img src="img_cmpss/Hospital Playlist_optimizada.jpg" alt="exhuma pelicula"></a>
+                </div>
+                <div class="serie">
+                    <a href="#"><img src="img_cmpss/IdentidadDesbloqueada_optimizada.jpg" alt="conection drama"></a>
+                </div>
+                <div class="serie">
+                    <a href="#"><img src="img_cmpss/Mr.Sunshine_optimizada.jpg" alt="vincenzo drama"></a>
+                </div>
+                <div class="serie">
+                    <a href="#"><img src="img_cmpss/my dearest_optimizada.jpg" alt="vincenzo drama"></a>
+                </div>
+            </div>
+        </div>
+        <button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</section>
+
+<!-- carrusel 4 -->
+
+<section id="premiosMBC">
+    <div class="contenedor-titulo-controles">
+        <h3>Premios MBC 2024</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/reply 1988_optimizada.jpg" alt="reply 1988 drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/stranger_optimizada.jpg" alt="aterrizaje de emegencia a tu corazon drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/the veil_optimizada.jpg" alt="pasillos de hospital drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/traintobusan_optimizada.jpg" alt="el monstruo de la vieja seul drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/vagabond_optimizada.jpg" alt="el monstruo de la vieja seul drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section>
+
+<!-- carrusel 5 -->
+
+<section id="premiosSBS">
+    <div class="contenedor-titulo-controles">
+        <h3>Premios SBS 2024</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/VeinticincoVeintiuno_optimizada.jpg" alt="stranger drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/The-Trunk_optimizada.jpg" alt="the veil drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/whenthephonerings__optimizada.jpg" alt="my dearest drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/exhuma__optimizada.jpg" alt="vagabond drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/MrPlankton_optimizada.jpg" alt="vagabond drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section>
+
+<!-- carrusel6 -->
+<!-- <section id="generos">
+    <div class="contenedor-titulo-controles">
+        <h3>Explora los mejores generos audiovisuales</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/la gloria_optimizada.jpg" alt="la gloria drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/exhuma__optimizada.jpg" alt="exhuma pelicula"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/connection_optimizada.jpg" alt="conection drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Vincenzo_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Vincenzo_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section> -->
+
+<!-- carrusel 7 -->
+<section id="lomasleido">
+    <div class="contenedor-titulo-controles">
+        <h3>Emplienza explorando Aquí</h3>
+    </div>
+<div class="contenedor-principal">
+<button role="button" id="flecha izquierda" class="flecha-izquierda" aria-label="Anterior"><i class="fa-solid fa-angle-left"></i></button>
+<div class="contenedor-carrusel">
+    <div class="carrusel">
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/la gloria_optimizada.jpg" alt="la gloria drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/exhuma__optimizada.jpg" alt="exhuma pelicula"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/connection_optimizada.jpg" alt="conection drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Vincenzo_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+        <div class="serie">
+            <a href="#"><img src="img_cmpss/Vincenzo_optimizada.jpg" alt="vincenzo drama"></a>
+        </div>
+    </div>
+</div>
+<button role="button" id="flecha derecha" class="flecha-derecha" aria-label="Siguiente"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+</section>
+
+        <form id="formulario-opinion" action="formulario" method="post">
+            <h2>¡Queremos escuchar tu opinión!</h2>
+            <div>
+              <label for="name">Nombres y Apellidos:</label>
+              <input type="text" id="name" name="user_name" />
+            </div>
+            <div>
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" id="mail" name="user_email" />
+            </div>
+            <div>
+              <label for="msg">Usuario:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Ingresar / Suscribirme</button>
+            </div>
+          </form>
+    </main>
+
+    <footer id="footer">
+        <ul class="social-icon">
+            <li class="icon-elemento">
+                <a href="" class="icon"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="icon-elemento">
+                <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="icon-elemento"></li>
+                <a href="" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li class="icon-elemento"></li>
+                <a href="" class="icon"><i class="fa-solid fa-envelope-open-text"></i></a>
+            </li>
+            <li class="icon-elemento"></li>
+                <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+        <ul class="menu-footer">
+            <li class="menu-elementos">
+                <a href="" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elementos">
+                <a href="" class="menu-icon">Equipo</a>
+            </li>
+            <li class="menu-elementos">
+                <a href="" class="menu-icon">Contacto</a>
+            </li>
+            <li class="menu-elementos">
+                <a href="" class="menu-icon">Newsletter</a>
+            </li>
+            <li class="menu-elementos">
+                <a href="" class="menu-icon">Sobre Nosotros</a>
+            </li>
+        </ul>
+        <p class="text-footer">Desarrollado por Stefany Ospino Carrillo 2024 | © Todos los derechos reservados</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/2297005405.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
